@@ -16,7 +16,7 @@ function runDots() {
             echo "Syncing the dev-setup repo to your local machine."
             echo "------------------------------"
             echo ""
-            cd ~ && curl -#L https://github.com/donnemartin/dev-setup/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE}
+            cd ~ && curl -#L https://github.com/cicloon/dev-setup/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE}
         fi
         if [ $ARG == "osxprep" ] || [ $ARG == "all" ]; then
             # Run the osxprep.sh Script
@@ -85,7 +85,7 @@ function runDots() {
             echo "Setting up JavaScript web development environment."
             echo "------------------------------"
             echo ""
-            #./webdev.sh # coming soon
+            ./webdev.sh # coming soon
         fi
         if [ $ARG == "android" ] || [ $ARG == "all" ]; then
             # Run the android.sh Script
@@ -94,6 +94,14 @@ function runDots() {
             echo "------------------------------"
             echo ""
             ./android.sh
+        fi
+        if [ $ARG == "ruby" ] || [ $ARG == "all" ]; then
+            # Run the ruby.sh Script
+            echo "------------------------------"
+            echo "Setting up Ruby development environment."
+            echo "------------------------------"
+            echo ""
+            ./ruby.sh
         fi
     done
 

@@ -27,5 +27,8 @@ brew cask install --appdir="~/Applications" android-studio
 
 brew install android-sdk
 
+# Update Android SDK
+android update sdk --no-ui
+
 # Remove outdated versions from the cellar.
 brew cleanup

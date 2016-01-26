@@ -18,6 +18,7 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
+brew install npm
 brew install node
 
 # Remove outdated versions from the cellar.
@@ -27,5 +28,6 @@ npm install -g coffee-script
 npm install -g grunt-cli
 npm install -g jshint
 npm install -g less
+npm install -g cordova
 
 #gem install jekyll
