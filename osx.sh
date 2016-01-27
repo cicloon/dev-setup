@@ -82,7 +82,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
 
 # Disable Resume system-wide
-#defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 # Disable automatic termination of inactive apps
 #defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
@@ -185,7 +185,7 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable press-and-hold for keys in favor of key repeat
-# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
@@ -386,11 +386,12 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 # Don’t group windows by application in Mission Control
 # (i.e. use the old Exposé behavior instead)
 # defaults write com.apple.dock expose-group-by-app -bool false
+
 # Group windows by application in Mission Control
 defaults write com.apple.dock expose-group-by-app -bool true
 
 # Disable Dashboard
-#defaults write com.apple.dashboard mcx-disabled -bool true
+defaults write com.apple.dashboard mcx-disabled -bool true
 
 # Don’t show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
@@ -778,6 +779,14 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 
 # Install Sublime Text settings
 # cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
+
+###############################################################################
+# Atom                                                                        #
+###############################################################################
+
+# Install Atom settings
+cp -f atom.cson  ~/.atom/config.cson 2> /dev/null
 
 ###############################################################################
 # Transmission.app                                                            #

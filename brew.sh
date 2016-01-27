@@ -109,6 +109,7 @@ brew install git
 brew install git-lfs
 brew install git-flow
 brew install git-extras
+brew install bash-git-prompt
 brew install imagemagick --with-webp
 brew install lua
 brew install lynx
@@ -145,7 +146,7 @@ brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
-# brew cask install --appdir="/Applications" sublime-text3
+brew cask install --appdir="/Applications" sublime-text3
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
 # brew cask install --appdir="/Applications" vagrant
@@ -159,6 +160,10 @@ brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" evernote
+
+brew cask install --appdir="/Applications" sketch
+brew cask install --appdir="/Applications" github-desktop
+
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
 
