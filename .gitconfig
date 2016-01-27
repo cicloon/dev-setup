@@ -4,7 +4,11 @@
     l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
     # View the current working tree status using the short format
-    s = status -s
+    s = status
+
+    st = status
+
+    ss = status -s
 
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
@@ -20,6 +24,8 @@
 
     # Commit all changes
     ca = !git add -A && git commit -av
+
+    co = "{ git checkout $1 }"
 
     # Switch to a branch, creating it if necessary
     go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
