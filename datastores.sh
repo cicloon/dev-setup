@@ -23,6 +23,7 @@ brew install mysql
 brew install postgresql
 brew install mongo
 brew install redis
+brew install couchdb
 brew install elasticsearch
 
 # Install mysql workbench
