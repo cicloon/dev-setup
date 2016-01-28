@@ -124,7 +124,7 @@
 
 [color "status"]
 
-    added = greend
+    added = green
     changed = red
     untracked = cyan
 
