@@ -1,3 +1,6 @@
+# Load rvm
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
