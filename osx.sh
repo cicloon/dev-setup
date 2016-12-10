@@ -786,7 +786,7 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 ###############################################################################
 
 # Install Atom settings
-cp -f atom.cson  ~/.atom/config.cson 2> /dev/null
+# cp -f atom.cson  ~/Library/config.cson 2> /dev/null
 
 ###############################################################################
 # Transmission.app                                                            #

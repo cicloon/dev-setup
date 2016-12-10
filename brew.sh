@@ -58,9 +58,14 @@ brew install python3
 
 # Install ruby-build and rbenv
 brew install ruby-build
-brew install rbenv
+# brew install rbenv
 LINE='eval "$(rbenv init -)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
+
+# Install Elixir and Phoenix
+brew install elixir
+mix local.hex
+mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -146,8 +151,7 @@ brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text3
-brew cask install --appdir="/Applications" atom
+brew cask install --appdir="/Applications" visual-studio-code
 apm install --packages-file atom-package-list.txt
 
 brew cask install --appdir="/Applications" virtualbox
@@ -169,6 +173,8 @@ brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" sketch
 brew cask install --appdir="/Applications" github-desktop
 
+
+
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
 
@@ -179,7 +185,7 @@ brew cask install --appdir="/Applications" github-desktop
 # brew cask alfred link
 
 # Install Docker, which requires virtualbox
-# brew install docker
+brew install docker
 # brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins

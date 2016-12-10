@@ -1,3 +1,11 @@
+[user]
+        name = cicloon
+        email = aleon.prof@gmail.com
+[filter "lfs"]
+        clean = git-lfs clean %f
+        smudge = git-lfs smudge %f
+        required = true
+
 [alias]
 
     # View abbreviated SHA, description, and history graph of the latest 20 commits
