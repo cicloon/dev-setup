@@ -21,11 +21,15 @@ brew update
 brew install npm
 brew install node
 
+brew install nginx
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
+npm install -g n
+n 6.9.1
 npm install -g coffee-script
 npm install -g grunt-cli
 npm install -g cordova
 
-#gem install jekyll
+

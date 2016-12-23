@@ -138,8 +138,8 @@ brew link libxml2 --force
 brew link libxslt --force
 
 # Install Heroku
-brew install heroku-toolbelt
-heroku update
+# brew install heroku-toolbelt
+# heroku update
 
 # Install Cask
 brew install caskroom/cask/brew-cask
@@ -152,11 +152,8 @@ brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" visual-studio-code
-apm install --packages-file atom-package-list.txt
 
-brew cask install --appdir="/Applications" virtualbox
-# brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" heroku-toolbelt
+brew cask install --appdir="/Applications" genymotion
 brew cask install --appdir="/Applications" macdown
 
 # Misc casks
@@ -166,26 +163,18 @@ brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" caffeine
+brew cask install --appdir="/Applications" air-video-server-hd
+brew cask install --appdir="/Applications" Spotify
+
 brew cask install --appdir="/Applications" vlc
 
 brew cask install --appdir="/Applications" sketch
 brew cask install --appdir="/Applications" github-desktop
 
-
-
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
-
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
-
-# Link cask apps to Alfred
-# brew cask alfred link
-
 # Install Docker, which requires virtualbox
 brew install docker
+brew install docker-compose
+
 # brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins

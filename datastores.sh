@@ -25,11 +25,13 @@ brew install mongo
 brew install redis
 brew install couchdb
 brew install elasticsearch
+brew install nsq
+brew install rabbitmq
 
 # Install mysql workbench
 # Install Cask
 brew install caskroom/cask/brew-cask
-brew cask install --appdir="/Applications" mysqlworkbench
+# brew cask install --appdir="/Applications" mysqlworkbench
 
 # Remove outdated versions from the cellar.
 brew cleanup
