@@ -22,3 +22,7 @@ Thumbs.db
 
 # Repo scratch directory
 scratch/
+
+.vscode
+.vs
+jsconfig.json

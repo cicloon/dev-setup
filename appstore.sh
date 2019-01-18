@@ -35,5 +35,5 @@ mas install 946798523  # AntiSleep (2.13)
 
 
 killall "divvy" &> /dev/null
-sudo cp com.mizage.Divvy.plist ~/Library/Preferences/com.mizage.Divvy.plist
+sudo cp ./appPreferences/* ~/Library/Preferences
 

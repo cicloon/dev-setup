@@ -27,6 +27,15 @@ function runDots() {
             echo ""
             ./macosprep.sh
         fi
+        if [ $ARG == "createfolders" ] || [ $ARG == "all" ]; then
+            # Run the osxprep.sh Script
+            echo ""
+            echo "------------------------------"
+            echo "Creating projects folders"
+            echo "------------------------------"
+            echo ""
+            ./createfolders.sh
+        fi
         if [ $ARG == "brew" ] || [ $ARG == "all" ]; then
             # Run the brew.sh Script
             # For a full listing of installed formulae and apps, refer to
@@ -70,6 +79,14 @@ function runDots() {
             echo "------------------------------"
             echo ""
             ./ruby.sh
+        fi
+        if [ $ARG == "elixir" ] || [ $ARG == "all" ]; then
+            # Run the elixir.sh Script
+            echo "------------------------------"
+            echo "Setting up Elixir development environment."
+            echo "------------------------------"
+            echo ""
+            ./elixir.sh
         fi
     done
 

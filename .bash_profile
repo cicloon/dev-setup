@@ -3,8 +3,6 @@
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
-# Add ANDROID_HOME path
-export ANDROID_HOME=/usr/local/opt/android-sdk
 
 
 # Load the shell dotfiles, and then some:
@@ -53,5 +51,8 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari Chrome Code iTunes SystemUIServer Terminal iTerm Tweetbot" killall;
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin:/usr/sbin
+export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin:/usr/sbin:$HOME/projects/cabify/devkit/bin
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
+[[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion # NVM

@@ -18,14 +18,19 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-# Install nvm & node version
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-nvm install 10.14.2
+brew install asdf
+brew install autoconf
+brew install wxmac
 
-brew install yarn
-brew install watchman
+echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bash_profile
+echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bash_profile
 
-# Remove outdated versions from the cellar.
-brew cleanup
+asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
+asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 
+asdf install erlang 20.0
+asdf global erlang 20.0
+
+asdf install elixir 1.6.0-otp-20
+asdf global elixir 1.6.0
 
