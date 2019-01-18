@@ -32,9 +32,8 @@ brew install moreutils
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
-# Install Bash 4.
+# Install Bash 5.
 brew install bash
-brew tap homebrew/versions
 brew install bash-completion2
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
@@ -98,12 +97,8 @@ brew install libxslt
 brew link libxml2 --force
 brew link libxslt --force
 
-# Install Cask
-brew install caskroom/cask/brew-cask
-
 # Core casks
 brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
@@ -119,7 +114,6 @@ brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" air-video-server-hd
 brew cask install --appdir="/Applications" Spotify
 brew cask install --appdir="/Applications" vlc
-brew cask install --appdir="/Applications" github-desktop
 brew cask install --appdir="/Applications" karabiner-elements
 
 # Install Docker, which requires virtualbox
