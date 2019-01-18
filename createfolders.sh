@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 if [ ! -d "~/projects" ]; then
   mkdir '~/projects'
 fi
