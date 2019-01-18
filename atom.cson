@@ -1,8 +1,0 @@
-"*":
-  tabs:
-    enableVcsColoring: true
-    usePreviewTabs: true
-  welcome:
-    showOnStartup: false
-  'file-types':
-    'hamlbars': 'text.haml'
