@@ -115,6 +115,7 @@ brew cask install --appdir="/Applications" air-video-server-hd
 brew cask install --appdir="/Applications" Spotify
 brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" karabiner-elements
+brew cask install --appdir="/Applications" telegram-desktop
 
 # Install Docker, which requires virtualbox
 brew install docker
