@@ -32,5 +32,5 @@ asdf install erlang 20.0
 asdf global erlang 20.0
 
 asdf install elixir 1.6.0-otp-20
-asdf global elixir 1.6.0
+asdf global elixir 1.6.0-otp-20
 

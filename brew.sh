@@ -83,7 +83,7 @@ brew install webkit2png
 brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
-brew install ntfs-3g
+
 
 # Lxml and Libxslt
 brew install libxml2
@@ -100,7 +100,6 @@ brew cask install --appdir="/Applications" visual-studio-code
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" google-drive
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
@@ -110,13 +109,18 @@ brew cask install --appdir="/Applications" Spotify
 brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" karabiner-elements
 brew cask install --appdir="/Applications" telegram-desktop
+brew cask install --appdir="/Applications" docker
+
+# Read ntfs
+brew cask install osxfuse
+brew install ntfs-3g
 
 # Install Docker, which requires virtualbox
 brew install docker
 brew install docker-compose
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package qlvideo
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package qlvideo
 
 # Remove outdated versions from the cellar.
 brew cleanup

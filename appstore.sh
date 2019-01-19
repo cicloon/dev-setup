@@ -25,7 +25,6 @@ mas install 409183694  # Keynote (8.3)
 mas install 784801555  # Microsoft OneNote (15.29)
 mas install 918858936  # Airmail 3 (3.2.1)
 mas install 409201541  # Pages (6.0.5)
-mas install 682658836  # GarageBand (10.1.4)
 mas install 413857545  # Divvy (1.5)
 mas install 409203825  # Numbers (5.3)
 mas install 784801555  # Microsoft OneNote

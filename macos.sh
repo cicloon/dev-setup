@@ -42,6 +42,9 @@ defaults write com.apple.systemuiserver menuExtras -array \
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
+# Automatically hides the menubar
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
+
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
@@ -381,6 +384,9 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
+
+# Disable showing recent apps in the dock
+defaults write com.apple.dock show-recents -bool false
 
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
