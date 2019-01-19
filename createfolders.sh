@@ -1,20 +1,22 @@
 #!/usr/bin/env bash
-if [ ! -d "~/projects" ]; then
-  mkdir '~/projects'
+if [ ! -d "${HOME}/projects" ]; then
+  echo "creating projects folder"
+  cd $HOME
+  mkdir "${HOME}/projects"
 fi
 
-if [ ! -d "~/projects/javascript" ]; then
-  mkdir '~/projects/javascript'
+if [ ! -d "${HOME}/projects/javascript" ]; then
+  mkdir "${HOME}/projects/javascript"
 fi
 
-if [ ! -d "~/projects/iOS" ]; then
-  mkdir '~/projects/iOS'
+if [ ! -d "${HOME}/projects/iOS" ]; then
+  mkdir "${HOME}/projects/iOS"
 fi
 
-if [ ! -d "~/projects/ruby" ]; then
-  mkdir '~/projects/ruby'
+if [ ! -d "${HOME}/projects/ruby" ]; then
+  mkdir "${HOME}/projects/ruby"
 fi
 
-if [ ! -d "~/projects/elixir" ]; then
-  mkdir '~/projects/elixir'
+if [ ! -d "${HOME}/projects/elixir" ]; then
+  mkdir "${HOME}/projects/elixir"
 fi
