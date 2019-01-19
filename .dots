@@ -49,6 +49,15 @@ function runDots() {
             echo ""
             ./brew.sh
         fi
+        if [ $ARG == "appstore" ] || [ $ARG == "all" ]; then
+            # Run the appstore.sh Script
+            echo ""
+            echo "------------------------------"
+            echo "Installing App Store apps"
+            echo "------------------------------"
+            echo ""
+            ./appstore.sh
+        fi
         if [ $ARG == "macos" ] || [ $ARG == "all" ]; then
             # Run the osx.sh Script
             # I strongly suggest you read through the commented osx.sh
