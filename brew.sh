@@ -45,16 +45,10 @@ chsh -s /usr/local/bin/bash
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-
 # Install Python
 brew install python
 brew install python3
 
-
-# Install Elixir and Phoenix
-brew install elixir
-mix local.hex
-mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
