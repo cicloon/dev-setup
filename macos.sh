@@ -187,8 +187,11 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 	# Restart automatically if the computer freezes
 	sudo systemsetup -setrestartfreeze on
 
-	# Sets displaysleep to 15 minutes
-	sudo pmset -a displaysleep 15
+	# Sets displaysleep to 15 minutes on charger
+	sudo pmset -c displaysleep 15
+
+  # Sets displaysleep to 4 minutes on battery
+  sudo pmset -b displaysleep 4
 
 	# Do not allow machine to sleep on charger
 	sudo pmset -c sleep 0
@@ -335,9 +338,6 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-
-# Enable the MacBook Air SuperDrive on any Mac
-sudo nvram boot-args="mbasd=1"
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
