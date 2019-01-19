@@ -1,10 +1,11 @@
 [user]
-        name = cicloon
-        email = aleon.prof@gmail.com
+  name = cicloon
+  email = aleon.prof@gmail.com
 [filter "lfs"]
-        clean = git-lfs clean %f
-        smudge = git-lfs smudge %f
-        required = true
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 
 [alias]
 
@@ -21,6 +22,8 @@
 
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
+		dt = !"git diff-tree --no-commit-id --name-only -r"
 
     # `git di $number` shows the diff between the state `$number` revisions ago and the current state
     di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
@@ -89,6 +92,10 @@
         fi \
     }; f"
 
+    nextc = "!sh -c 'git log --reverse --pretty=%H master | awk \"/$(git rev-parse HEAD)/{getline;print}\" | xargs git checkout'"
+
+    previousc = "!f() { git checkout HEAD~ }; f"
+
 [apply]
 
     # Detect whitespace errors when applying a patch
@@ -97,7 +104,7 @@
 [core]
 
     # Use custom `.gitignore` and `.gitattributes`
-    excludesfile = ~/.gitignore
+	  excludesfile = /Users/alejandroleonmunoz/.gitignore
     attributesfile = ~/.gitattributes
 
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
@@ -158,7 +165,7 @@
     # Use the Git 1.x.x default to avoid errors on machines with old Git
     # installations. To use `simple` instead, add this to your `~/.extra` file:
     # `git config --global push.default simple`. See http://git.io/mMah-w.
-    default = matching
+	default = simple
     # Make `git push` push relevant annotated tags when pushing branches out.
     followTags = true
 
@@ -186,4 +193,20 @@
 
 [credential]
 
-    helper = osxkeychain
+	helper = osxkeychain
+
+[code]
+    editor = code --wait
+
+[merge]
+    tool = vscode
+
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+
+[diff]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
