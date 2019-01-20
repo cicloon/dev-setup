@@ -42,13 +42,15 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 # Change to the new shell, prompts for password
 chsh -s /usr/local/bin/bash
 
+# Openssh
+brew install openssh
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
 # Install Python
 brew install python
 brew install python3
-
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
