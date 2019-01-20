@@ -18,9 +18,10 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install asdf
 brew install autoconf
 brew install wxmac
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.6.3
 
 echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bash_profile
 echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bash_profile

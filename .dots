@@ -103,7 +103,7 @@ function runDots() {
             echo "Setting up Visual Studio Code development environment."
             echo "------------------------------"
             echo ""
-            ./elixir.sh
+            ./vscode.sh
         fi
     done
 
