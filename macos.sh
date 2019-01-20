@@ -179,34 +179,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # General trackapd settings
 defaults write .GlobalPreferences com.apple.trackpad.forceClick 1
-defaults write .GlobalPreferences com.apple.trackpad.scaling 3
-
-defaults write com.apple.AppleMultitouchTrackpad ActuateDetents 1
-defaults write com.apple.AppleMultitouchTrackpad Clicking 0
-defaults write com.apple.AppleMultitouchTrackpad DragLock 0
-defaults write com.apple.AppleMultitouchTrackpad Dragging 0
-defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold 1
-defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed 0
-defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick 0
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture 2
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture 2
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture 2
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture 2
-defaults write com.apple.AppleMultitouchTrackpad TrackpadHandResting 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadHorizScroll 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadMomentumScroll 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadPinch 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadRotate 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadScroll 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag 0
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture 2
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture 0
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture 2
-defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerDoubleTapGesture 1
-defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture 3
-
+defaults write .GlobalPreferences com.apple.trackpad.scaling 2.5
 
 ###############################################################################
 	# Energy saving                                                               #
@@ -397,6 +370,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Copy Chrome Debug automator task to applications
 cp -R "./bin/Chrome Debug.app" "${HOME}/Applications/"
 
+# Copy dock settings with default permanent apps
+cp ./dockSettings/com.apple.dock.plist ~/Library/Preferences/com.apple.dock.plist
+
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
@@ -422,7 +398,7 @@ defaults write com.apple.dock show-recents -bool false
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
 # defaults write com.apple.dock persistent-apps -array
-cat ./dockSettings/persistentApps | defaults write com.apple.dock persistent-apps
+# cat ./dockSettings/persistentApps | defaults write com.apple.dock persistent-apps
 
 # Show only open applications in the Dock
 #defaults write com.apple.dock static-only -bool true
@@ -607,7 +583,7 @@ defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnab
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+# sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 # Change indexing order and disable some search results
 # Yosemite-specific search results (remove them if you are using macOS 10.9 or older):
 # 	MENU_DEFINITION

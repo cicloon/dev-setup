@@ -26,7 +26,7 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.6.3
 echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bash_profile
 echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bash_profile
 
-reload
+source ~/.bash_profile
 
 asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git

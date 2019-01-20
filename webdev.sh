@@ -28,7 +28,6 @@ chmod 755 "$NVM_DIR/nvm.sh"
 nvm install 10.14.2
 
 
-
 brew install yarn
 brew install watchman
 
