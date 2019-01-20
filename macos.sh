@@ -177,6 +177,37 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Stop iTunes from responding to the keyboard media keys
 # launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
+# General trackapd settings
+defaults write .GlobalPreferences com.apple.trackpad.forceClick 1
+defaults write .GlobalPreferences com.apple.trackpad.scaling 3
+
+defaults write com.apple.AppleMultitouchTrackpad ActuateDetents 1
+defaults write com.apple.AppleMultitouchTrackpad Clicking 0
+defaults write com.apple.AppleMultitouchTrackpad DragLock 0
+defaults write com.apple.AppleMultitouchTrackpad Dragging 0
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold 1
+defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed 0
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadHandResting 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadHorizScroll 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadMomentumScroll 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadPinch 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRotate 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadScroll 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerDoubleTapGesture 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture 3
+
+
 ###############################################################################
 	# Energy saving                                                               #
 	###############################################################################
