@@ -180,6 +180,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # General trackapd settings
 defaults write .GlobalPreferences com.apple.trackpad.forceClick 1
 defaults write .GlobalPreferences com.apple.trackpad.scaling 2.5
+defaults write -g com.apple.trackpad.scrollBehavior 2
+
+
 
 ###############################################################################
 	# Energy saving                                                               #

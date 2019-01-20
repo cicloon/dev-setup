@@ -34,7 +34,7 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install Bash 5.
 brew install bash
-brew install bash-completion2
+brew install bash-completion
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
 # Prompts for password
