@@ -110,6 +110,9 @@ brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" karabiner-elements
 brew cask install --appdir="/Applications" telegram-desktop
 brew cask install --appdir="/Applications" docker
+brew cask install --appdir="/Applications" rescuetime
+brew cask install --appdir="/Applications" tripmode
+brew cask install --appdir="/Applications" zoomus
 
 # Read ntfs
 brew cask install osxfuse

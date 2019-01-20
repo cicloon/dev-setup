@@ -97,6 +97,14 @@ function runDots() {
             echo ""
             ./elixir.sh
         fi
+        if [ $ARG == "vscode" ] || [ $ARG == "all" ]; then
+            # Run the vscode.sh Script
+            echo "------------------------------"
+            echo "Setting up Visual Studio Code development environment."
+            echo "------------------------------"
+            echo ""
+            ./elixir.sh
+        fi
     done
 
     echo "------------------------------"

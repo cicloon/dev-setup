@@ -364,8 +364,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 ###############################################################################
 
 # Copy Chrome Debug automator task to applications
-cp -R "./bin/Chrome Debug.app" "${HOME}/Applications/Chrome Debug.app"
-
+cp -R "./bin/Chrome Debug.app" "${HOME}/Applications/"
 
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
