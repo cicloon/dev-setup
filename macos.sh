@@ -182,7 +182,9 @@ defaults write .GlobalPreferences com.apple.trackpad.forceClick 1
 defaults write .GlobalPreferences com.apple.trackpad.scaling 2.5
 defaults write -g com.apple.trackpad.scrollBehavior 2
 
-
+# Enable AAC codec for bluetooth audio
+defaults write bluetoothaudiod "Enable AptX codec" -bool true
+defaults write bluetoothaudiod "Enable AAC codec" -bool true
 
 ###############################################################################
 	# Energy saving                                                               #
